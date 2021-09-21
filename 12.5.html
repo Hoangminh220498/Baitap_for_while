@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tempMod = 0;
+        var tempDiv = 0;
+        var sum  = 0;
+        document.write("Cac so tu 100 - 999 co tong cac chu so chia het cho 3 la:");          
+        for(var i = 100; i < 1000 ; i++) {
+            tempDiv = i;
+            sum = 0;               
+            while(tempDiv > 0 ) {	
+                tempMod = tempDiv % 10;
+                tempDiv = tempDiv / 10;
+                sum += tempMod;
+            }               
+            if(sum%3 == 0) {
+                document.write(i+ ", ");
+            }               
+        }
+    </script>
+</body>
+</html>

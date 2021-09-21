@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // In ra 100 so Fibonaci dau tien
+		
+        var so1 =0 ;
+		var so2 =1 ;
+		var Fibonaci = 1;
+		document.write("100 so Fibonaci dau tien la :");
+		while(Fibonaci <= 100) {
+			document.write("\t   ", so1);
+			var sum = so1 + so2;
+			so1 = so2;
+			so2 = sum;
+			Fibonaci++;
+		}
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //Polinom		
+		var rv, temp, mod;
+        var n = parseInt(prompt("Nhập n = "));			
+		temp = n; 
+        rv = 0;
+	    while (n > 0) {
+	    	mod = n % 10;
+	    	n = n / 10;
+	    	rv= rv * 10 + mod;
+	    }	    
+	    if (rv == temp) {
+	    	document.write("So do la so Polinom"); 
+	    } else {
+	        document.write("So do kp la so Polinom");
+	    }
+    </script>
+</body>
+</html>
